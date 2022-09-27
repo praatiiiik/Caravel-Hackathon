@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_bottom_nav"
+    app:startDestination="@id/explorePlaceFragment">
+
+    <fragment
+        android:id="@+id/explorePlaceFragment"
+        android:name="com.example.hackathon.ui.dashboard.bottomNavFrags.exploreUI.ExplorePlaceFragment"
+        android:label="Explore"
+        tools:layout="@layout/fragment_explore_place" />
+    <fragment
+        android:id="@+id/addPlaceFragment"
+        android:name="com.example.hackathon.ui.dashboard.bottomNavFrags.addPlaceUI.AddPlaceFragment"
+        android:label="Rent House"
+        tools:layout="@layout/fragment_add_place" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.hackathon.ui.dashboard.bottomNavFrags.accountUI.AccountFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_account" />
+</navigation>

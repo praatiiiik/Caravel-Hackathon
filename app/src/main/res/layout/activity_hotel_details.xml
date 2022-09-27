@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.hoteldetails.HotelDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hotelImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/whatsapp_image_2022_09_27_at_4_14_15_am"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="193dp" />
+
+        <TextView
+            android:id="@+id/hotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dharamshala"
+            android:textSize="24sp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintTop_toBottomOf="@+id/hotelImage" />
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hsadhs"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/hotelName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:text="Rooms Available"
+            android:textColor="#0CAD0C"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descTV" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_wifi_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            app:layout_constraintEnd_toStartOf="@+id/ratingTV"
+            app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+        <TextView
+            android:id="@+id/ratingTV"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:text="3.5"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/pngkey_com_avatar_png_1149878"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageIcon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Owner"
+            android:textColor="#EE1010"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addHotel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:strokeColor="#1C83EA"
+            app:strokeWidth="2dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+            <TextView
+                android:id="@+id/loginTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Book Now"
+                android:layout_gravity="center"
+                android:textColor="#1C83EA" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

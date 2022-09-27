@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hotelCardView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DFE5DF">
+
+            <ImageView
+                android:id="@+id/hotelImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/whatsapp_image_2022_09_27_at_4_14_15_am"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/hotelNameTV"
+                android:layout_width="0dp"
+                android:textSize="20sp"
+                android:hint="Loading..."
+                android:textColor="@color/black"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hotelImage"
+                app:layout_constraintTop_toTopOf="@+id/hotelImage" />
+
+            <ImageView
+                android:id="@+id/rupeeIV"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_baseline_currency_rupee_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hotelImage"
+                app:layout_constraintTop_toBottomOf="@+id/hotelNameTV" />
+
+            <TextView
+                android:id="@+id/hotelRentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rupeeIV"
+                app:layout_constraintStart_toEndOf="@+id/rupeeIV" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_baseline_star_rate_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

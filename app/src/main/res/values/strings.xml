@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Hackathon</string>
+    <string name="password">Password</string>
+    <string name="email">Email.......@gmail.com</string>
+    <string name="loginEmail">Email</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register</string>
+    <string name="hotelName">Hotel Name</string>
+    <string name="rooms_available">Rooms Available</string>
+    <string name="hote_address">Address</string>
+    <string name="cost">Cost per night</string>
+    <string name="description">Description</string>
+    <string name="features">Features</string>
+    <string name="review">Review</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="owner_number">Phone Number</string>
+    <string name="city">City</string>
+    <string name="addHotel">Add Hotel</string>
+    <string name="hotelDetails">Hotel Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="cities">
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Chennai</item>
+        <item>Kolkata</item>
+        <item>Punjab</item>
+    </string-array>
+</resources>
